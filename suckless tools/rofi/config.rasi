@@ -1,0 +1,22 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+
+configuration {
+ display-drun: "Applications";
+ modi: "drun,run";
+ font: "HackNerdFontMono 12";
+ combi-modi: "drun,run";
+ show-icons: true;
+ icon-theme: "Papirus-Dark";
+ }
+
+window {
+ width: 25%;
+}
+
+element-icon {
+ size: 40;
+}
+
+listview {
+ lines: 8;
+}
