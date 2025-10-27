@@ -1,0 +1,26 @@
+XF86MonBrightness{Up,Down}  
+	brightnessctl s 10{+,-}  
+
+XF86Audio{Raise,Lower}Volume
+	pamixer -{i,d} 10 && killall -s USR1 slstatus
+
+XF86AudioMute  
+	pamixer --toggle-mute && killall -s USR1 slstatus
+
+super + r
+  rofi -show drun
+
+super + shift + m
+	~/.scripts/SRS.sh
+
+super + shift + l
+	slock
+
+Print
+	maim -s | tee ~/Pictures/$(date +%s).png | xclip -selection clipboard -t image/png
+
+super + shift + k
+	~/.scripts/screenkey.sh
+
+super + e
+  thunar
